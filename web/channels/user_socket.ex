@@ -2,7 +2,7 @@ defmodule Broadcaster.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", Broadcaster.RoomChannel
+  channel "stream", Broadcaster.StreamChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
